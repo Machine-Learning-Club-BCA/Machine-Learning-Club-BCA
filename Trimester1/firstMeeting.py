@@ -1,12 +1,9 @@
-# This Python 3 environment comes with many helpful analytics libraries installed
-# It is defined by the kaggle/python Docker image: https://github.com/kaggle/docker-python
-# For example, here's several helpful packages to load
+# IMPORTANT: Copy this code and put it in the kaggle notebook to make it.
+
+
 
 import numpy as np # linear algebra
 import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
-
-# Input data files are available in the read-only "../input/" directory
-# For example, running this (by clicking run or pressing Shift+Enter) will list all files under the input directory
 
 import os
 for dirname, _, filenames in os.walk('/kaggle/input'):
@@ -39,12 +36,3 @@ from sklearn.metrics import mean_absolute_error
 val_mae = mean_absolute_error(val_y, val_predictions)
 
 print(val_mae)
-
-# # Set up code checking
-# from learntools.core import binder
-# binder.bind(globals())
-# from learntools.machine_learning.ex3 import *
-# print("Setup good")
-
-# You can write up to 20GB to the current directory (/kaggle/working/) that gets preserved as output when you create a version using "Save & Run All" 
-# You can also write temporary files to /kaggle/temp/, but they won't be saved outside of the current session
